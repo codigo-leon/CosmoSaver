@@ -1,5 +1,7 @@
 ![CosmoSaver](https://github.com/codigo-leon/CosmoSaver/assets/134780478/cf66aa99-92a0-48ba-9b0b-edd0d6181781)
 
+![CosmoSaverDemo](https://github.com/codigo-leon/CosmoSaver/assets/134780478/e8394d7c-c739-4ea1-8f2c-dafaa61df529)
+
 ## Controls
 - Use the arrow keys to navigate your spaceship.
 - Press the spacebar to shoot lasers and destroy asteroids.
