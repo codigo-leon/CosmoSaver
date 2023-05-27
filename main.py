@@ -112,17 +112,17 @@ def main():
     pygame.init()
 
     screen = pygame.display.set_mode((WIDTH, HEIGHT))
-    pygame.display.set_caption("Gradient Space Background Animation")
+    pygame.display.set_caption("Cosmo Saver 1.0")
 
     clock = pygame.time.Clock()
 
     stars = create_star_list(STAR_COUNT)
-    laser_sound = pygame.mixer.Sound("laser.wav")
+    laser_sound = pygame.mixer.Sound("sounds/laser.wav")
     laser_sound.set_volume(0.2)
-    asteroid_hit = pygame.mixer.Sound("asteroid_hit.wav")
-    engine = pygame.mixer.Sound("engine.wav")
+    asteroid_hit = pygame.mixer.Sound("sounds/asteroid_hit.wav")
+    engine = pygame.mixer.Sound("sounds/engine.wav")
     # Load the audio file into the mixer
-    music = mixer.music.load("music.mp3")
+    music = mixer.music.load("sounds/music.mp3")
 
     # Set the desired volume
     mixer.music.set_volume(0.7)
