@@ -1,4 +1,4 @@
-![CosmoSaver](https://github.com/codigo-leon/CosmoSaver/assets/134780478/53db2a3f-d639-4b0c-88ea-fada200dc025)
+![CosmoSaver](https://github.com/codigo-leon/CosmoSaver/assets/134780478/cf66aa99-92a0-48ba-9b0b-edd0d6181781)
 
 ## Controls
 - Use the arrow keys to navigate your spaceship.
