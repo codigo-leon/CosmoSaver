@@ -16,3 +16,15 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Update README badge
+        run: |
+          echo "::set-output name=status::success" >> $GITHUB_ENV
+          echo "::set-output name=message::Build succeeded"
+        
+      - name: Update README
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+          directory: ./
+
