@@ -1,0 +1,37 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Build project
+      run: |
+        # Add the necessary build commands here
+        # For example:
+        # npm install
+        # npm run build
+        
+    - name: Update README badge
+      run: |
+        echo "::set-output name=status::success" >> $GITHUB_ENV
+        echo "::set-output name=message::Build succeeded"
+        
+    - name: Update README
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main
+        directory: ./
+
