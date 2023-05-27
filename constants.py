@@ -1,0 +1,6 @@
+# constants.py
+WIDTH = 800
+HEIGHT = 600
+STAR_COUNT = 75
+
+DARK_PURPLE = (40, 10, 60)
