@@ -27,4 +27,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
           directory: ./
-
+          commit_message: Updated README with build passing flag
