@@ -19,10 +19,12 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.x
+          python-version: 3.9
 
       - name: Install dependencies
-        run: | 
+        run: |
+          sudo apt-get install -y libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev
+
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
