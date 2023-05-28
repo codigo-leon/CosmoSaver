@@ -1,4 +1,5 @@
-[![Build Status](https://github.com/codigo-leon/CosmoSaver/workflows/Build/badge.svg)](https://github.com/codigo-leon/CosmoSaver/actions)
+[![Build Status](https://github.com/codigo-leon/CosmoSaver/actions/workflows/build.yml/badge.svg)](https://github.com/codigo-leon/CosmoSaver/actions/workflows/build.yml)
+
 ![CosmoSaver](https://github.com/codigo-leon/CosmoSaver/assets/134780478/cf66aa99-92a0-48ba-9b0b-edd0d6181781)
 
 ![CosmoSaverDemo](https://github.com/codigo-leon/CosmoSaver/assets/134780478/e8394d7c-c739-4ea1-8f2c-dafaa61df529)
