@@ -2,7 +2,7 @@ name: Build Status
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  Cosmo-Saver-Build-Test:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
@@ -16,8 +16,14 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - name: Update README badge
-        run: |
-          echo "::set-output name=status::success" >> $GITHUB_ENV
-          echo "::set-output name=message::Build succeeded"
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+
+      - name: Install dependencies
+        run: pip install pygame
+
+      - name: Run tests
+        run: python main.py
         
